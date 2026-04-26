@@ -35,6 +35,15 @@ const ADULT_GAMES = [
     age: "All ages",
   },
   {
+    href: "/who-said-it",
+    emoji: "🗣️",
+    title: "Who Said It?",
+    description: "A Bible quote appears. Pick the right speaker from 5 options — one chance only.",
+    badge: "New",
+    badgeColor: "bg-connections-blue text-connections-blue-fg",
+    age: "All ages",
+  },
+  {
     href: "/immaculate-grid",
     emoji: "⚔️",
     title: "Bible Immaculate Grid",

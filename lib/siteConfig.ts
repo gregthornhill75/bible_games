@@ -77,6 +77,7 @@ export const siteConfig = {
       { name: "Kids Games", href: "/kids", current: false },
       { name: "Connections", href: "/connections", current: false },
       { name: "Higher or Lower", href: "/higher-lower", current: false },
+      { name: "Who Said It?", href: "/who-said-it", current: false },
     ]
   },
 
