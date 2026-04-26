@@ -73,10 +73,10 @@ export const siteConfig = {
 
   navigation: {
     main: [
-      { name: "Play", href: "/#game", current: true },
-      { name: "How to Play", href: "/#how-to-play", current: false },
-      { name: "Archive", href: "/archive", current: false },
-      { name: "FAQ", href: "/#faq", current: false }
+      { name: "All Games", href: "/", current: true },
+      { name: "Kids Games", href: "/kids", current: false },
+      { name: "Connections", href: "/connections", current: false },
+      { name: "Higher or Lower", href: "/higher-lower", current: false },
     ]
   },
 
