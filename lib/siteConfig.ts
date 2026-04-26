@@ -5,9 +5,9 @@ const SITE_URL = env.NEXT_PUBLIC_SITE_URL;
 
 export const siteConfig = {
   site: {
-    name: "Bible Connections",
-    title: "Bible Connections",
-    description: "A daily Bible word-grouping puzzle. Find the four hidden categories among 16 words from Scripture — a new puzzle every day.",
+    name: "Bible Games",
+    title: "Bible Games",
+    description: "Free Bible games for all ages. Daily puzzles, kids games, and scripture challenges — play in your browser, no sign-up needed.",
     keywords: "bible connections, bible puzzle, bible trivia, bible word game, daily bible game, scripture puzzle, christian games, bible games",
     url: SITE_URL,
     logo: "/logo.svg",
