@@ -1,0 +1,19 @@
+{
+  "name": "Puzzle Game",
+  "short_name": "Puzzle",
+  "description": "A daily puzzle game playable in any browser.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "categories": ["games", "entertainment"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

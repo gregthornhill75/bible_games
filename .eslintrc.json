@@ -1,0 +1,33 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:jsx-a11y/recommended"],
+  "plugins": ["jsx-a11y"],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": [
+      "warn",
+      { "components": ["Link"], "specialLink": ["hrefLeft", "hrefRight"] }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      "warn",
+      { "assert": "either" }
+    ],
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "Literal[value=/\\b(text|bg|border|from|to|via|ring|divide|placeholder|caret|fill|stroke|shadow|accent|decoration|outline)-(stone|zinc|slate|gray|neutral|warm|cream|amber|red|blue|green|yellow|orange|purple|pink|indigo|rose|emerald|teal|cyan|sky|violet|fuchsia|lime)-[0-9]+/]",
+        "message": "Use semantic color tokens (bg-background, text-foreground, text-primary, bg-card, etc.) instead of hardcoded Tailwind palette colors — those don't swap in dark mode. If you truly need a fixed color, eslint-disable-next-line with a reason."
+      },
+      {
+        "selector": "TemplateElement[value.raw=/\\b(text|bg|border|from|to|via|ring|divide|placeholder|caret|fill|stroke|shadow|accent|decoration|outline)-(stone|zinc|slate|gray|neutral|warm|cream|amber|red|blue|green|yellow|orange|purple|pink|indigo|rose|emerald|teal|cyan|sky|violet|fuchsia|lime)-[0-9]+/]",
+        "message": "Use semantic color tokens (bg-background, text-foreground, text-primary, bg-card, etc.) instead of hardcoded Tailwind palette colors — those don't swap in dark mode. If you truly need a fixed color, eslint-disable-next-line with a reason."
+      }
+    ]
+  },
+  "ignorePatterns": [
+    "node_modules",
+    ".next",
+    "out",
+    "scripts",
+    "public",
+    "next-env.d.ts"
+  ]
+}

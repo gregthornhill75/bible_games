@@ -1,0 +1,24 @@
+import { renderOgImage, OG_SIZE, OG_CONTENT_TYPE } from '@/lib/seo/og';
+import { siteConfig } from '@/lib/siteConfig';
+import { formatPrettyDate, getArchiveDates, isValidDailyDate } from '@/lib/daily';
+
+export const size = OG_SIZE;
+export const contentType = OG_CONTENT_TYPE;
+export const alt = 'Daily Puzzle';
+
+// Pre-generate OG images only for the sitemapped window. Requests outside
+// the window will 404 because the parent page already filters with
+// `dynamicParams = false`.
+export function generateStaticParams() {
+  return getArchiveDates().map((date) => ({ date }));
+}
+
+export default async function Image({ params }: { params: Promise<{ date: string }> }) {
+  const { date } = await params;
+  const pretty = isValidDailyDate(date) ? formatPrettyDate(date) : date;
+  return renderOgImage({
+    eyebrow: siteConfig.site.name.split(' - ')[0].toUpperCase(),
+    title: 'Daily Puzzle',
+    subtitle: pretty,
+  });
+}

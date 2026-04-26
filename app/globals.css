@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Design tokens for the game-seo-template design system.
+ *
+ * Single-knob rebrand: every branded hue derives from `--brand-hue`.
+ * Pack E's rebrand CLI can retint the whole site by changing one number.
+ */
+
+@layer base {
+  :root {
+    /* Brand hue — purple/violet for Bible Games */
+    --brand-hue: 270;
+
+    /* Warm neutral surface + ink */
+    --background: 30 30% 98%;
+    --foreground: 20 15% 15%;
+    --surface: 30 30% 98%;
+    --surface-muted: 30 25% 94%;
+    --ink: 20 15% 15%;
+    --ink-muted: 20 10% 40%;
+
+    /* Card / popover — slightly brighter than background for subtle lift */
+    --card: 0 0% 100%;
+    --card-foreground: 20 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 15% 15%;
+
+    /* Brand primary (derived from --brand-hue) */
+    --primary: var(--brand-hue) 88% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Accent — complementary warm amber, offset from the brand hue */
+    --accent: calc(var(--brand-hue) + 26) 90% 55%;
+    --accent-foreground: 20 15% 15%;
+
+    /* Secondary / muted — quiet warm tints */
+    --secondary: 30 25% 94%;
+    --secondary-foreground: 20 15% 15%;
+    --muted: 30 25% 94%;
+    --muted-foreground: 20 10% 40%;
+
+    /* Destructive — kept red-hued for a11y */
+    --destructive: 0 74% 52%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders / inputs / focus ring */
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: var(--brand-hue) 88% 60%;
+
+    /* Corner radius */
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --brand-hue: 270;
+
+    --background: 20 18% 10%;
+    --foreground: 30 20% 96%;
+    --surface: 20 18% 10%;
+    --surface-muted: 20 16% 14%;
+    --ink: 30 20% 96%;
+    --ink-muted: 30 12% 70%;
+
+    --card: 20 18% 13%;
+    --card-foreground: 30 20% 96%;
+    --popover: 20 18% 13%;
+    --popover-foreground: 30 20% 96%;
+
+    --primary: var(--brand-hue) 88% 62%;
+    --primary-foreground: 20 18% 10%;
+
+    --accent: calc(var(--brand-hue) + 26) 90% 60%;
+    --accent-foreground: 20 18% 10%;
+
+    --secondary: 20 16% 18%;
+    --secondary-foreground: 30 20% 96%;
+    --muted: 20 16% 18%;
+    --muted-foreground: 30 12% 70%;
+
+    --destructive: 0 70% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 14% 22%;
+    --input: 20 14% 22%;
+    --ring: var(--brand-hue) 88% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  /* Hide scrollbars while preserving scroll. Cross-browser. */
+  html {
+    scrollbar-width: none;
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ── Bible Connections difficulty colours ───────────────────────────────── */
+:root {
+  --connections-yellow:    48 96% 53%;
+  --connections-yellow-fg: 30 15% 12%;
+  --connections-green:     142 69% 38%;
+  --connections-green-fg:  0 0% 100%;
+  --connections-blue:      210 80% 48%;
+  --connections-blue-fg:   0 0% 100%;
+  --connections-purple:    270 65% 50%;
+  --connections-purple-fg: 0 0% 100%;
+}
+.dark {
+  --connections-yellow:    48 90% 48%;
+  --connections-yellow-fg: 30 15% 10%;
+  --connections-green:     142 60% 42%;
+  --connections-green-fg:  0 0% 100%;
+  --connections-blue:      210 72% 56%;
+  --connections-blue-fg:   0 0% 100%;
+  --connections-purple:    270 58% 62%;
+  --connections-purple-fg: 0 0% 100%;
+}
+
+/* Shake animation for wrong guess */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX(6px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px); }
+}
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Respect users who prefer reduced motion by neutralizing custom animations. */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .animate-slide-up,
+  .animate-slide-down,
+  .animate-scale-in,
+  .animate-pulse-glow,
+  .animate-shimmer,
+  .animate-cell-press {
+    animation: none !important;
+  }
+
+  html {
+    scroll-behavior: auto !important;
+  }
+}

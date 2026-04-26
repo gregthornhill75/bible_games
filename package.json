@@ -1,0 +1,56 @@
+{
+  "name": "game-seo-template",
+  "version": "1.0.0",
+  "description": "Next.js 15 template for puzzle game sites.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build",
+    "type-check": "tsc --noEmit",
+    "seo-check": "node scripts/seo-check.mjs",
+    "rebrand": "node scripts/rebrand.mjs",
+    "setup": "npm install && npm run rebrand"
+  },
+  "keywords": [
+    "nextjs",
+    "puzzle-games",
+    "seo-template",
+    "typescript",
+    "tailwindcss"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.11",
+    "@radix-ui/react-separator": "^1.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tooltip": "^1.2.7",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.536.0",
+    "next": "^15.4.5",
+    "next-themes": "^0.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/node": "^24.2.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.15",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.16",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.9.2"
+  }
+}
