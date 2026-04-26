@@ -63,4 +63,4 @@ build/
 .turbo
 
 # MCP session artifacts (Playwright browser traces/logs)
-.playwright-mcp/
+.playwright-mcp/.github/workflows/ci.yml
