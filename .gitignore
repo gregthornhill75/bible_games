@@ -64,3 +64,4 @@ build/
 
 # MCP session artifacts (Playwright browser traces/logs)
 .playwright-mcp/.github/workflows/ci.yml
+.github/

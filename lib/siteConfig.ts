@@ -13,7 +13,7 @@ export const siteConfig = {
     logo: "/logo.svg",
     favicon: "/favicon.ico",
     author: "Bible Games",
-    email: "hello@biblegames.com",
+    email: "gregthornhill75@gmail.com",
     language: "en-US"
   },
 
