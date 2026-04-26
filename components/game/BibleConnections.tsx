@@ -277,7 +277,7 @@ export function BibleConnections({ puzzle }: { puzzle: ConnectionsPuzzle }) {
       {/* ── Status messages ───────────────────────────────────────────── */}
       <div className="mt-3 h-6 text-center text-sm font-medium">
         {oneAway && !gameOver && (
-          <span className="text-amber-600 dark:text-amber-400 animate-fade-in">
+          <span className="text-warning animate-fade-in">
             One away…
           </span>
         )}

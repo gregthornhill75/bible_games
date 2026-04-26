@@ -114,8 +114,10 @@
   }
 }
 
-/* ── Bible Connections difficulty colours ───────────────────────────────── */
+/* ── Bible Connections difficulty colours + warning ────────────────────── */
 :root {
+  --warning: 38 92% 50%;
+  --warning-foreground: 30 15% 12%;
   --connections-yellow:    48 96% 53%;
   --connections-yellow-fg: 30 15% 12%;
   --connections-green:     142 69% 38%;
@@ -126,6 +128,8 @@
   --connections-purple-fg: 0 0% 100%;
 }
 .dark {
+  --warning: 38 85% 58%;
+  --warning-foreground: 30 15% 10%;
   --connections-yellow:    48 90% 48%;
   --connections-yellow-fg: 30 15% 10%;
   --connections-green:     142 60% 42%;

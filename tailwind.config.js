@@ -55,6 +55,10 @@ module.exports = {
           DEFAULT: 'hsl(var(--ink))',
           muted: 'hsl(var(--ink-muted))',
         },
+        warning: {
+          DEFAULT: 'hsl(var(--warning))',
+          foreground: 'hsl(var(--warning-foreground))',
+        },
         // Bible Connections difficulty colours
         'connections-yellow':    'hsl(var(--connections-yellow))',
         'connections-yellow-fg': 'hsl(var(--connections-yellow-fg))',
