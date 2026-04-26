@@ -56,6 +56,15 @@ const ADULT_GAMES = [
 
 const KIDS_GAMES = [
   {
+    href: "/emoji-decoder",
+    emoji: "🔍",
+    title: "Bible Emoji Decoder",
+    description: "Three emojis, one Bible story. Decode all 10 — easy to hard, fun for all ages.",
+    badge: "New",
+    badgeColor: "bg-connections-yellow text-connections-yellow-fg",
+    age: "All ages",
+  },
+  {
     href: "/kids/match",
     emoji: "🃏",
     title: "Bible Match",

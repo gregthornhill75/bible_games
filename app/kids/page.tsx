@@ -32,6 +32,14 @@ const KIDS_GAMES = [
     available: true,
   },
   {
+    href: "/emoji-decoder",
+    emoji: "🔍",
+    title: "Bible Emoji Decoder",
+    description: "Three emojis, one Bible story. Easy to hard — can you decode them all?",
+    badge: "Play Now",
+    available: true,
+  },
+  {
     href: "/kids/miracle-match",
     emoji: "✨",
     title: "Name That Miracle",
