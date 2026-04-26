@@ -27,9 +27,9 @@ const KIDS_GAMES = [
     href: "/kids/fill-in",
     emoji: "✏️",
     title: "Bible Fill-In",
-    description: "Complete famous Bible stories with the missing word.",
-    badge: "Coming Soon",
-    available: false,
+    description: "Complete famous Bible stories with the missing word. Eight fun questions!",
+    badge: "Play Now",
+    available: true,
   },
   {
     href: "/kids/miracle-match",
