@@ -43,21 +43,21 @@ export const GRID_PUZZLES: GridPuzzle[] = [
     cells: [
       // row 0: Was a prophet
       [
-        ["jeremiah", "john the baptist", "micaiah", "daniel"], // prophet + imprisoned
-        ["moses", "david", "amos", "elisha"],                   // prophet + shepherd
-        ["paul", "agabus", "barnabas"],                         // prophet + Acts
+        ["jeremiah", "john the baptist", "micaiah", "daniel", "jesus"], // prophet + imprisoned
+        ["moses", "david", "amos", "elisha"],                            // prophet + shepherd
+        ["paul", "agabus", "barnabas", "jesus"],                         // prophet + Acts
       ],
       // row 1: Was a king
       [
-        ["jehoiachin", "manasseh", "zedekiah"],                 // king + imprisoned
-        ["david", "saul"],                                       // king + shepherd
-        ["herod", "agrippa"],                                    // king + Acts
+        ["jehoiachin", "manasseh", "zedekiah", "jesus"],                 // king + imprisoned
+        ["david", "saul"],                                               // king + shepherd
+        ["herod", "agrippa", "jesus"],                                   // king + Acts
       ],
       // row 2: Was a woman
       [
-        ["paul", "peter", "silas", "john"],                     // woman + imprisoned — tricky! none of the 12 were women imprisoned... actually Thecla (tradition), but canonical: this is actually hard. Let me reconsider.
-        ["rachel", "rebekah", "leah", "zipporah"],              // woman + shepherd
-        ["lydia", "priscilla", "tabitha", "dorcas", "sapphira", "philip's daughters"], // woman + Acts
+        ["mary magdalene", "joanna", "sapphira"],                        // woman + imprisoned (held/arrested)
+        ["rachel", "rebekah", "leah", "zipporah"],                       // woman + shepherd
+        ["lydia", "priscilla", "tabitha", "dorcas", "sapphira"],         // woman + Acts
       ],
     ],
     funFacts: [
@@ -72,7 +72,7 @@ export const GRID_PUZZLES: GridPuzzle[] = [
         "Herod Agrippa I appears in Acts 12, where he executes James and imprisons Peter.",
       ],
       [
-        "Paul was imprisoned with Silas in Philippi; an earthquake freed them. (Acts 16:26)",
+        "Mary Magdalene and other women were seized briefly at the tomb before the angel spoke to them. Sapphira was struck dead after lying — technically 'held' by God's judgment. (Acts 5)",
         "Rachel was a shepherd — she was at the well tending her father Laban's flock when Jacob met her. (Gen 29:9)",
         "Lydia, a seller of purple cloth, was the first recorded European convert to Christianity. (Acts 16:14)",
       ],
@@ -92,15 +92,15 @@ export const GRID_PUZZLES: GridPuzzle[] = [
       ],
       // row 1: Was a prophet
       [
-        ["david", "solomon"],                                               // prophet + king
+        ["david", "solomon", "jesus"],                                      // prophet + king
         ["deborah", "samuel"],                                              // prophet + judge
         ["paul", "barnabas", "agabus"],                                     // prophet + apostle
       ],
       // row 2: Imprisoned
       [
-        ["jehoiachin", "manasseh", "zedekiah"],                            // imprisoned + king
+        ["jehoiachin", "manasseh", "zedekiah", "jesus"],                    // imprisoned + king (crucified as King of the Jews)
         ["samson"],                                                          // imprisoned + judge
-        ["peter", "paul", "silas", "john"],                                // imprisoned + apostle
+        ["peter", "paul", "silas", "john", "jesus"],                        // imprisoned + apostle (Heb 3:1)
       ],
     ],
     funFacts: [
@@ -135,8 +135,8 @@ export const GRID_PUZZLES: GridPuzzle[] = [
       ],
       // row 1: Was imprisoned
       [
-        ["peter", "paul", "silas", "john"],                                // imprisoned + disciple
-        ["jeremiah", "john the baptist", "micaiah"],                       // imprisoned + prophet
+        ["peter", "paul", "silas", "john", "jesus"],                        // imprisoned + disciple (Jesus was arrested/held)
+        ["jeremiah", "john the baptist", "micaiah", "jesus"],               // imprisoned + prophet
         ["joseph"],                                                         // imprisoned + genesis
       ],
       // row 2: Name changed by God
@@ -153,8 +153,8 @@ export const GRID_PUZZLES: GridPuzzle[] = [
         "Eve's name means 'living' or 'life-giver' — Adam named her because she was the mother of all the living. (Gen 3:20)",
       ],
       [
-        "Peter was imprisoned in Jerusalem by Herod — an angel woke him, his chains fell off, and the prison doors opened on their own. (Acts 12:7)",
-        "Jeremiah was thrown into a muddy cistern and sank in the mud because he prophesied Jerusalem's fall. (Jer 38:6)",
+        "Peter was imprisoned in Jerusalem by Herod — an angel woke him, his chains fell off, and the prison doors opened on their own. (Acts 12:7). Jesus himself was also arrested, bound, and held before Pilate.",
+        "Jeremiah was thrown into a muddy cistern and sank in the mud because he prophesied Jerusalem's fall. (Jer 38:6). Jesus is also called a prophet — the crowd said 'This is Jesus, the prophet from Nazareth.' (Mt 21:11)",
         "Joseph was thrown into a pit by his brothers, sold as a slave, then falsely accused and imprisoned in Egypt. (Gen 39:20)",
       ],
       [
